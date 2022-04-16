@@ -19,5 +19,6 @@ This webapp fetch the recent tweets and predict the mood as angry, happy, netura
 
 * Clone the repo
 * Create a file ```dev_settings.py``` in ```twitterapi``` folder with suitable variables
+* Create ```model.h5``` from [here](https://colab.research.google.com/drive/1ZLGsv7PrsZ4ijxC1jcycXhuGGqCVCeDv?usp=sharing)
 * Set ``` debug = False ``` in ```twitterapi/settings.py```
 * Run the server
