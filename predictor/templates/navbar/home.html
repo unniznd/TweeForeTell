@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="content-section">
+    <legend class="border-bottom mb-4">Recent Tweets and Moods</legend>
+    <div class="row row-center">
+    {% for valid_id in valid_tweet_id %}
+    {% for data in recent_tweets %}
+    {% if data.id == valid_id.id %}
+    {% if data.text|length > 50 %}
+    <div class="col-sm-5 row-wrap">
+    <div class="card" style="width: 15rem;">
+        {% if valid_id.emotion == 0 %}
+        <img class="card-img-top" src="{% static 'images/angry.jpeg'%}" alt="Card image cap">
+        {% endif %}
+        {% if valid_id.emotion == 1 %}
+        <img class="card-img-top" src="{% static 'images/happy.png'%}" alt="Card image cap">
+        {% endif %}
+        {% if valid_id.emotion == 2 %}
+        <img class="card-img-top" src="{% static 'images/neutral.jpeg'%}" alt="Card image cap">
+        {% endif %}
+        {% if valid_id.emotion == 3 %}
+        <img class="card-img-top" src="{% static 'images/sad.jpeg'%}" alt="Card image cap">
+        {% endif %}
+        
+        
+        <div class="card-body">
+          <p class="card-text">&#128513 {{data.text|slice:47}}...</p>
+        </div>
+        
+      </div>
+    </div>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    
+</div>
+</div>
+
+{% endblock content %}
