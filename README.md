@@ -18,7 +18,20 @@ This webapp fetch the recent tweets and predict the mood as angry, happy, netura
 ## How to Run locally
 
 * Clone the repo
+* Install the requirements ``` pip install -r requirements.txt ```
 * Create a file ```dev_settings.py``` in ```twitterapi``` folder with suitable variables
-* Create ```model.h5``` from [here](https://colab.research.google.com/drive/1ZLGsv7PrsZ4ijxC1jcycXhuGGqCVCeDv?usp=sharing)
+Model of ```dev_settings.py```
+```
+ALLOWED_HOSTS = ['localhost']
+bearer_token = 'add_bearer_token_here'
+SECRET_KEY = 'add_secret_key_key'
+
+DATABASES = {
+    'default': {
+        'ENGINE': '',
+        'NAME': '',
+    }
+}
+```
 * Set ``` debug = False ``` in ```twitterapi/settings.py```
 * Run the server
