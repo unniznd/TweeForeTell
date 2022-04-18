@@ -36,3 +36,6 @@ DATABASES = {
 ```
 * Set ``` debug = False ``` in ```twitterapi/settings.py```
 * Run the server
+```
+python manage.py runserver 
+```
