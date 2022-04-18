@@ -20,6 +20,7 @@ This webapp fetch the recent tweets and predict the mood as angry, happy, netura
 * Clone the repo
 * Install the requirements ``` pip install -r requirements.txt ```
 * Create a file ```dev_settings.py``` in ```twitterapi``` folder with suitable variables
+
 Model of ```dev_settings.py```
 ```
 ALLOWED_HOSTS = ['localhost']
