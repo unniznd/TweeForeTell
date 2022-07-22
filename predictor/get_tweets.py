@@ -1,9 +1,9 @@
 import tweepy
 import string
 import random
-# from twitterapi.settings import bearer_token
+from twitterapi.settings import bearer_token
 
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAMwwbgEAAAAAfx06OT5ecEGyZQTEt%2F%2FGibT9A90%3D0i9Tj7JOQHKlD7jssEQF6nu1Ip1C3Ws0wzP4jypjGfLpqq8kT7"
+
 
 client = tweepy.Client(bearer_token)
 
